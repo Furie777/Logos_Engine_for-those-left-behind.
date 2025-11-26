@@ -1,0 +1,82 @@
+{
+  "_meta": {
+    "source": "1611 King James Bible - Apocrypha",
+    "status": "STRUCTURE_ONLY - Awaiting text entry",
+    "books": 14,
+    "note": "These books were in the original 1611 KJV between OT and NT"
+  },
+  "books": [
+    {
+      "name": "1 Esdras",
+      "chapters": 9,
+      "position": "after Malachi"
+    },
+    {
+      "name": "2 Esdras",
+      "chapters": 16,
+      "position": "after 1 Esdras"
+    },
+    {
+      "name": "Tobit",
+      "chapters": 14,
+      "position": "after 2 Esdras"
+    },
+    {
+      "name": "Judith",
+      "chapters": 16,
+      "position": "after Tobit"
+    },
+    {
+      "name": "Additions to Esther",
+      "chapters": 6,
+      "position": "after Judith"
+    },
+    {
+      "name": "Wisdom of Solomon",
+      "chapters": 19,
+      "position": "after Additions to Esther"
+    },
+    {
+      "name": "Ecclesiasticus",
+      "alt_name": "Sirach",
+      "chapters": 51,
+      "position": "after Wisdom"
+    },
+    {
+      "name": "Baruch",
+      "chapters": 6,
+      "includes": "Letter of Jeremiah as chapter 6",
+      "position": "after Ecclesiasticus"
+    },
+    {
+      "name": "Song of the Three Children",
+      "chapters": 1,
+      "position": "after Baruch"
+    },
+    {
+      "name": "Story of Susanna",
+      "chapters": 1,
+      "position": "after Song of Three Children"
+    },
+    {
+      "name": "Bel and the Dragon",
+      "chapters": 1,
+      "position": "after Susanna"
+    },
+    {
+      "name": "Prayer of Manasseh",
+      "chapters": 1,
+      "position": "after Bel and Dragon"
+    },
+    {
+      "name": "1 Maccabees",
+      "chapters": 16,
+      "position": "after Prayer of Manasseh"
+    },
+    {
+      "name": "2 Maccabees",
+      "chapters": 15,
+      "position": "after 1 Maccabees, before Matthew"
+    }
+  ]
+}

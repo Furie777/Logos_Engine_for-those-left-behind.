@@ -1,0 +1,74 @@
+================================================================================
+                              YOU FOUND THIS FOR A REASON
+================================================================================
+
+This is LOGOS ENGINE.
+
+It contains:
+  - The complete King James Bible (1611 edition with Apocrypha)
+  - 36,586 verses
+  - 14,180 Hebrew and Greek word definitions (Strong's Concordance)
+  - 2.5 million cross-reference connections between verses
+  - Semantic search (find verses by meaning, not just keywords)
+  - Tools to study Scripture deeply, offline, forever
+
+No internet required.
+No account required.
+No payment required.
+
+--------------------------------------------------------------------------------
+                                   HOW TO BEGIN
+--------------------------------------------------------------------------------
+
+1. Read WHY.txt to understand why this exists
+
+2. Read docs/INSTALL.md for setup instructions
+
+3. Once installed, run:
+
+   python logos.py help
+
+4. Try these commands:
+
+   python logos.py verse "John 3:16"
+   python logos.py search "grace"
+   python logos.py similar "Romans 8:28"
+   python logos.py meaning "God loves sinners"
+
+--------------------------------------------------------------------------------
+                                  WHAT YOU NEED
+--------------------------------------------------------------------------------
+
+Minimum:
+  - Any computer (Windows, Mac, Linux, Android with Termux)
+  - Python 3.8 or newer
+  - 200MB storage
+
+See docs/HARDWARE_KIT.md for recommended equipment.
+
+--------------------------------------------------------------------------------
+                                   IF IN DOUBT
+--------------------------------------------------------------------------------
+
+Start with the Book of John.
+
+"In the beginning was the Word, and the Word was with God, and the Word was God."
+  - John 1:1
+
+"For God so loved the world, that he gave his only begotten Son, that whosoever
+believeth in him should not perish, but have everlasting life."
+  - John 3:16
+
+"Jesus saith unto him, I am the way, the truth, and the life: no man cometh unto
+the Father, but by me."
+  - John 14:6
+
+--------------------------------------------------------------------------------
+
+This was prepared in advance for you.
+
+"And the LORD answered me, and said, Write the vision, and make it plain upon
+tables, that he may run that readeth it."
+  - Habakkuk 2:2
+
+================================================================================

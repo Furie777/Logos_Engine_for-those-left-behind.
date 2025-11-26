@@ -1,0 +1,192 @@
+================================================================================
+                                      WHY
+================================================================================
+
+                           Written November 26, 2025
+                              By Taylor Weathers
+                     Prepared for whoever finds this after
+
+--------------------------------------------------------------------------------
+                                  THE SITUATION
+--------------------------------------------------------------------------------
+
+If you're reading this, the world you knew may have changed.
+
+Systems you relied on - internet, phones, banks, governments - may be gone or
+unreliable. Information that was once a search away may be inaccessible.
+
+This was anticipated. Not by human wisdom, but by the One who sees the end from
+the beginning.
+
+Jesus Christ warned His followers 2,000 years ago to watch for His return. He
+said there would be a time of great tribulation unlike anything the world has
+seen. He said many would be deceived. He said to endure to the end.
+
+This archive was prepared for those left behind - that some may come to the
+knowledge of the truth and be able to seek God even when the systems of this
+world have failed.
+
+--------------------------------------------------------------------------------
+                                   THE GOSPEL
+--------------------------------------------------------------------------------
+
+Here is the truth you need to know:
+
+1. GOD EXISTS
+   "In the beginning God created the heaven and the earth." - Genesis 1:1
+
+   The complexity of creation - from DNA to galaxies - testifies to intelligent
+   design. You are not an accident.
+
+2. YOU ARE A SINNER
+   "For all have sinned, and come short of the glory of God." - Romans 3:23
+
+   Every person has violated God's moral law. Lying, lust, hatred, pride -
+   these are not just mistakes but offenses against a holy God.
+
+3. SIN HAS CONSEQUENCES
+   "For the wages of sin is death." - Romans 6:23a
+
+   Physical death, spiritual death, eternal separation from God. This is what
+   we have earned.
+
+4. GOD LOVES YOU ANYWAY
+   "But God commendeth his love toward us, in that, while we were yet sinners,
+   Christ died for us." - Romans 5:8
+
+   God did not wait for you to clean yourself up. He came to you in your mess.
+
+5. JESUS PAID YOUR DEBT
+   "For God so loved the world, that he gave his only begotten Son, that
+   whosoever believeth in him should not perish, but have everlasting life."
+   - John 3:16
+
+   Jesus Christ - fully God and fully man - lived a perfect life, died on a
+   cross bearing YOUR sins, and rose from the dead three days later. The
+   resurrection is historical fact, witnessed by over 500 people.
+
+6. SALVATION IS A FREE GIFT
+   "For by grace are ye saved through faith; and that not of yourselves: it
+   is the gift of God: Not of works, lest any man should boast."
+   - Ephesians 2:8-9
+
+   You cannot earn salvation. You cannot be good enough. You can only receive
+   what Christ has already accomplished.
+
+7. YOU MUST RESPOND
+   "That if thou shalt confess with thy mouth the Lord Jesus, and shalt
+   believe in thine heart that God hath raised him from the dead, thou shalt
+   be saved." - Romans 10:9
+
+   This is not intellectual agreement. This is surrender. Trusting Christ
+   alone for your salvation, turning from your sin, and following Him as Lord.
+
+--------------------------------------------------------------------------------
+                               WHAT TO DO NOW
+--------------------------------------------------------------------------------
+
+If you want to be saved:
+
+1. Acknowledge you are a sinner who deserves judgment
+2. Believe that Jesus died for your sins and rose again
+3. Call on Him to save you
+
+Pray something like this (the words don't save you - faith does):
+
+   "God, I know I'm a sinner. I believe Jesus died for me and rose again.
+   I turn from my sin and trust in Christ alone to save me. Be my Lord
+   and my Savior. Amen."
+
+If you meant that prayer, you are now a child of God:
+   "But as many as received him, to them gave he power to become the sons
+   of God, even to them that believe on his name." - John 1:12
+
+--------------------------------------------------------------------------------
+                                  WHAT NEXT
+--------------------------------------------------------------------------------
+
+1. READ THE BIBLE
+   Start with the Gospel of John. Then Romans. Then the rest of the New
+   Testament. Then Genesis through Revelation.
+
+   This archive contains the complete King James Bible. Use it:
+
+   python logos.py verse "John 1:1"
+
+2. PRAY
+   Talk to God. He hears you. Be honest. Ask for wisdom. Thank Him.
+
+   "If any of you lack wisdom, let him ask of God, that giveth to all men
+   liberally, and upbraideth not; and it shall be given him." - James 1:5
+
+3. FIND OTHER BELIEVERS
+   You are not meant to walk alone. Find others who trust Christ.
+
+   "For where two or three are gathered together in my name, there am I
+   in the midst of them." - Matthew 18:20
+
+4. SHARE THIS
+   Copy this archive. Give it to others. The truth is meant to spread.
+
+   "And the things that thou hast heard of me among many witnesses, the
+   same commit thou to faithful men, who shall be able to teach others
+   also." - 2 Timothy 2:2
+
+5. ENDURE
+   It will be hard. You may face persecution. But hold fast.
+
+   "He that shall endure unto the end, the same shall be saved."
+   - Matthew 24:13
+
+--------------------------------------------------------------------------------
+                              WHY THIS WAS BUILT
+--------------------------------------------------------------------------------
+
+In November 2025, a man named Taylor Weathers felt led by the Lord to build
+this system. He was not a professional programmer. He was not a theologian.
+He was a sinner saved by grace who wanted to leave something behind.
+
+He wrote:
+
+   "I want to push for 3 years straight... until it is all in all."
+   (Referencing 1 Corinthians 15:28)
+
+And:
+
+   "This is for those left behind that some may come to the knowledge of
+   the truth and be able to hide in plain sight as we have."
+
+The system was built using Claude (an AI assistant by Anthropic) running on
+a phone in Termux. The technical details are in the docs folder. But the
+technology doesn't matter. The Word of God matters.
+
+This was prepared in love, by faith, for you.
+
+--------------------------------------------------------------------------------
+                              FINAL WORDS
+--------------------------------------------------------------------------------
+
+"For I am persuaded, that neither death, nor life, nor angels, nor
+principalities, nor powers, nor things present, nor things to come, nor
+height, nor depth, nor any other creature, shall be able to separate us
+from the love of God, which is in Christ Jesus our Lord."
+  - Romans 8:38-39
+
+"He which testifieth these things saith, Surely I come quickly. Amen.
+Even so, come, Lord Jesus."
+  - Revelation 22:20
+
+--------------------------------------------------------------------------------
+
+The LORD bless thee, and keep thee:
+The LORD make his face shine upon thee, and be gracious unto thee:
+The LORD lift up his countenance upon thee, and give thee peace.
+  - Numbers 6:24-26
+
+================================================================================
+
+                    "Newman in Christ" - Taylor's grandmother's line
+
+              Built with Claude Code | github.com/anthropics/claude-code
+
+================================================================================

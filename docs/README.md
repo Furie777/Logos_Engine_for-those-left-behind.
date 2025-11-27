@@ -5,7 +5,7 @@ This folder contains documentation for the Logos Engine project.
 ## Contents
 
 - [Getting Started](GETTING_STARTED.md) - Initial setup and introduction
-- Future documentation will be added here
+- [Authentication Guide](AUTHENTICATION_GUIDE.md) - Secure access setup (⚠️ READ THIS BEFORE USING TOKENS)
 
 ## For Future Generations
 

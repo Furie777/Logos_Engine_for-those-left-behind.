@@ -29,6 +29,11 @@ Usage:
     python logos.py similar <ref>       # Find semantically similar verses
     python logos.py meaning <query>     # Search by meaning
     python logos.py concept <name>      # Search by theological concept
+
+    INTEGRITY (Autoimmune System):
+    python logos.py verify              # Verify all data checksums
+    python logos.py integrity           # Interactive integrity checker
+    python logos.py diagnose <file>     # Diagnose specific file
 """
 
 import sys
@@ -262,6 +267,23 @@ def main():
         for r, text, score in results:
             print(f"  {r}")
             print(f"    {text[:80]}...")
+
+    elif command == 'verify':
+        from src.integrity import verify_all
+        verify_all()
+
+    elif command == 'integrity':
+        from src.integrity import repl as integrity_repl
+        integrity_repl()
+
+    elif command == 'diagnose':
+        if len(sys.argv) < 3:
+            print("Usage: python logos.py diagnose <filepath>")
+            print("Example: python logos.py diagnose data/kjv.json")
+            return
+        filepath = sys.argv[2]
+        from src.integrity import diagnose
+        diagnose(filepath)
 
     elif command == 'help':
         print(__doc__)

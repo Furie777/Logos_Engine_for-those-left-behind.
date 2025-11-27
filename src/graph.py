@@ -10,10 +10,16 @@ from pathlib import Path
 try:
     import networkx as nx
 except ImportError:
-    print("Installing networkx...")
-    import subprocess
-    subprocess.run(["pip", "install", "networkx"])
-    import networkx as nx
+    print("\n" + "=" * 60)
+    print("ERROR: NetworkX library required but not found.")
+    print("=" * 60)
+    print("\nInstall with:")
+    print("    pip install networkx")
+    print("\nOr on some systems:")
+    print("    pip3 install networkx")
+    print("=" * 60 + "\n")
+    import sys
+    sys.exit(1)
 
 from .loader import load_kjv, load_cross_references
 

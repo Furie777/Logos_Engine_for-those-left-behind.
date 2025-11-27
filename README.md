@@ -25,10 +25,18 @@ A self-contained Scripture study system designed to survive and serve when infra
 
 ## Quick Start
 
+### Option A: Download ZIP (no coding required)
+
+1. Click the green **"Code"** button above
+2. Click **"Download ZIP"**
+3. Extract the ZIP to a folder
+4. Follow `docs/INSTALL.md` for your platform
+
+### Option B: Git Clone
+
 ```bash
-# Clone
-git clone https://github.com/YOUR_USERNAME/LOGOS-ENGINE.git
-cd LOGOS-ENGINE
+git clone https://github.com/Furie777/Logos_Engine_for-those-left-behind..git
+cd Logos_Engine_for-those-left-behind.
 
 # Install dependency
 pip install networkx

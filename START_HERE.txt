@@ -20,6 +20,17 @@ No payment required.
                                    HOW TO BEGIN
 --------------------------------------------------------------------------------
 
+IF YOU DOWNLOADED THIS FROM GITHUB:
+  - You already have everything. Just follow docs/INSTALL.md
+
+IF YOU'RE LOOKING AT THIS ON GITHUB:
+  - Click the green "Code" button
+  - Click "Download ZIP"
+  - Extract the ZIP file
+  - Then follow docs/INSTALL.md
+
+THEN:
+
 1. Read WHY.txt to understand why this exists
 
 2. Read docs/INSTALL.md for setup instructions

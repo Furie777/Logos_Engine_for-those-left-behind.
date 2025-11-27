@@ -146,16 +146,25 @@ def parse_greek_xml():
                 'kjv': ''
             }
 
-            # Get Greek word
-            for elem_name in ['greek', 'word', 'w']:
-                for elem in entry.iter(elem_name):
-                    if elem.text:
-                        data['greek'] = elem.text
-                    data['translit'] = elem.get('translit', '') or elem.get('xlit', '')
-                    if data['greek']:
-                        break
+            # Get Greek word - unicode is in attribute, not text content
+            for elem in entry.iter('greek'):
+                # Greek characters are in 'unicode' attribute (not elem.text)
+                data['greek'] = elem.get('unicode', '') or elem.text or ''
+                data['translit'] = elem.get('translit', '') or elem.get('xlit', '')
                 if data['greek']:
                     break
+
+            # Fallback to other element names if needed
+            if not data['greek']:
+                for elem_name in ['word', 'w']:
+                    for elem in entry.iter(elem_name):
+                        if elem.text:
+                            data['greek'] = elem.text
+                        data['translit'] = elem.get('translit', '') or elem.get('xlit', '')
+                        if data['greek']:
+                            break
+                    if data['greek']:
+                        break
 
             # Get definition
             for elem_name in ['strongs_def', 'def', 'meaning', 'definition']:
@@ -202,10 +211,15 @@ def parse_greek_regex(xml_path):
 
         data = {'greek': '', 'translit': '', 'def': '', 'kjv': ''}
 
-        # Extract Greek word
-        greek_match = re.search(r'<greek[^>]*>([^<]+)</greek>', entry_content)
-        if greek_match:
-            data['greek'] = greek_match.group(1)
+        # Extract Greek word from unicode attribute (proper XML format)
+        unicode_match = re.search(r'<greek[^>]*unicode="([^"]+)"', entry_content)
+        if unicode_match:
+            data['greek'] = unicode_match.group(1)
+        else:
+            # Fallback: try element text
+            greek_match = re.search(r'<greek[^>]*>([^<]+)</greek>', entry_content)
+            if greek_match:
+                data['greek'] = greek_match.group(1)
 
         # Extract transliteration
         translit_match = re.search(r'translit="([^"]+)"', entry_content)

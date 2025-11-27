@@ -206,6 +206,41 @@ class SemanticSearch:
             'blessing': {'H1293', 'G2129'},
             'glory': {'H3519', 'G1391'},
             'glorify': {'H3513', 'G1392'},
+
+            # Persecution/Tribulation/Endurance
+            'endure': {'G5281', 'G5278', 'H3201'},
+            'endurance': {'G5281', 'H3201'},
+            'endureth': {'G5281', 'G5278'},
+            'patient': {'G5281', 'G3114'},
+            'patience': {'G5281', 'G3115', 'H3201'},
+            'persecute': {'G1377', 'H7291'},
+            'persecuted': {'G1377', 'G1559', 'H7291'},
+            'persecution': {'G1375', 'G1377'},
+            'persecutions': {'G1375', 'G1377'},
+            'tribulation': {'G2347', 'H6869', 'H6862'},
+            'tribulations': {'G2347', 'H6869'},
+            'affliction': {'G2347', 'H6040', 'H6869'},
+            'afflictions': {'G2347', 'H6040'},
+            'suffer': {'G3958', 'G2553', 'H5375'},
+            'suffered': {'G3958', 'H5375'},
+            'suffering': {'G3958', 'G3804'},
+            'sufferings': {'G3804', 'G3958'},
+            'overcome': {'G3528', 'H3898', 'H1396'},
+            'overcometh': {'G3528'},
+            'overcame': {'G3528', 'H3898'},
+            'conquer': {'G3528', 'H3898'},
+            'victory': {'G3529', 'H5331', 'H8668'},
+            'trial': {'G3986', 'H4531'},
+            'trials': {'G3986'},
+            'temptation': {'G3986', 'H4531'},
+            'temptations': {'G3986'},
+            'test': {'G3986', 'G1381', 'H974'},
+            'tested': {'G3986', 'H974'},
+            'saints': {'H6918', 'G40'},
+            'martyr': {'G3144'},
+            'witness': {'G3144', 'H5707'},
+            'witnesses': {'G3144', 'H5707'},
+            'testimony': {'G3141', 'H5715'},
         }
 
     def _build_concept_map(self):
@@ -327,6 +362,19 @@ class SemanticSearch:
             'day': {'H3117', 'G2250'},
             'end_times': {'H319', 'H7093', 'G2078', 'G5056'},
             'forever': {'H5769', 'H5703', 'G166', 'G165'},
+
+            # PERSECUTION/TRIBULATION (for the days ahead)
+            'persecution': {'G1375', 'G1377', 'G1559', 'H7291', 'H7852'},
+            'tribulation': {'G2347', 'H6869', 'H6862', 'H6887'},
+            'affliction': {'G2347', 'H6040', 'H6869', 'H6887'},
+            'suffering': {'G3958', 'G3804', 'G2553', 'H5375'},
+            'endurance': {'G5281', 'G5278', 'G3114', 'G3115'},
+            'patience': {'G5281', 'G3114', 'G3115', 'H3201'},
+            'overcome': {'G3528', 'H3898', 'H1396', 'H5329'},
+            'victory': {'G3528', 'G3529', 'H5331', 'H8668'},
+            'trial': {'G3986', 'G1381', 'H974', 'H4531'},
+            'temptation': {'G3986', 'H4531', 'H5254'},
+            'martyrdom': {'G3144', 'G3141', 'H5707'},
         }
 
         # Reverse map: Strong's -> concepts

@@ -22,6 +22,7 @@ This checklist tracks the setup and ongoing maintenance of the Logos Engine proj
 - [x] Create CONTRIBUTING.md with contribution guidelines
 - [x] Create SETUP_CHECKLIST.md (this file)
 - [x] Create docs/GETTING_STARTED.md
+- [x] Create docs/AUTHENTICATION_GUIDE.md (⚠️ Security-focused guide for safe token handling)
 
 ## Future Tasks
 

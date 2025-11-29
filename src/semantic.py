@@ -241,6 +241,32 @@ class SemanticSearch:
             'witness': {'G3144', 'H5707'},
             'witnesses': {'G3144', 'H5707'},
             'testimony': {'G3141', 'H5715'},
+
+            # WIDOW/FATHERLESS/ORPHAN - For the Camilles
+            'widow': {'H490', 'G5503'},
+            'widows': {'H490', 'G5503'},
+            'widowhood': {'H491'},
+            'fatherless': {'H3490', 'G3737'},
+            'orphan': {'H3490', 'G3737'},
+            'orphans': {'H3490', 'G3737'},
+            'comfortless': {'G3737'},  # John 14:18 - orphanos
+
+            # PROVISION/KINSMAN-REDEEMER
+            'redeemer': {'H1350', 'G3086'},
+            'kinsman': {'H1350', 'H7138'},
+            'glean': {'H3950', 'H5953'},
+            'gleaning': {'H3951', 'H3950'},
+            'provision': {'H3559', 'H6679', 'G4306'},
+            'provide': {'H3559', 'H7200', 'G4306'},
+            'sustain': {'H3557', 'H5564'},
+
+            # PROTECTION/JUSTICE FOR VULNERABLE
+            'defend': {'H8199', 'H7378', 'G626'},
+            'plead': {'H7378', 'H1777', 'G1793'},
+            'avenge': {'H5358', 'G1556'},
+            'vengeance': {'H5359', 'G1557'},
+            'oppress': {'H6231', 'H3238', 'G2616'},
+            'afflict': {'H6031', 'H6887', 'G2346'},
         }
 
     def _build_concept_map(self):
@@ -375,6 +401,15 @@ class SemanticSearch:
             'trial': {'G3986', 'G1381', 'H974', 'H4531'},
             'temptation': {'G3986', 'H4531', 'H5254'},
             'martyrdom': {'G3144', 'G3141', 'H5707'},
+
+            # WIDOW/FATHERLESS - For the Camilles (Taylor's provision for Tristan & Lavender)
+            'widow': {'H490', 'H491', 'G5503'},
+            'fatherless': {'H3490', 'G3737'},
+            'orphan': {'H3490', 'G3737'},
+            'kinsman_redeemer': {'H1350', 'G3086', 'G59'},
+            'gleaning': {'H3950', 'H3951', 'H5953'},
+            'provision': {'H3559', 'H6679', 'G4306', 'G5524'},
+            'protection': {'H5526', 'H5341', 'H8104', 'G5432', 'G4933'},
         }
 
         # Reverse map: Strong's -> concepts

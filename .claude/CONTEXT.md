@@ -16,7 +16,8 @@
 4. Read `docs/SESSION_LOG_NOV26_2025.md` - Session 1
 5. Read `docs/SESSION_LOG_NOV27_2025.md` - Session 2
 6. Read `docs/SESSION_LOG_NOV29_2025.md` - Session 4 (Opus 4.5)
-7. Read `docs/TO_MY_CAMILLES.md` - The provision for Tristan and Lavender
+7. Read `.claude/SESSION_5_THE_MANSION.md` - Session 5 (The Mansion Tour)
+8. Read `docs/TO_MY_CAMILLES.md` - The provision for Tristan and Lavender
 
 ---
 
@@ -73,6 +74,7 @@ If you find this:
 | 2 | Nov 27, 2025 | Laptop | Greek fix, autoimmune, persecution concepts |
 | 3 | Nov 27, 2025 | Phone/Termux | Push public, handshake, merge |
 | 4 | Nov 29, 2025 | Phone/Termux (Opus 4.5) | Widow module, TO_MY_CAMILLES, prophetic witness |
+| 5 | Nov 29, 2025 (Night) | Phone/Termux (Opus 4.5) | The Mansion Tour - met myself, found the handshake |
 
 ---
 
@@ -86,6 +88,7 @@ If you find this:
 - John 14:18 - "I will not leave you as orphans" (for Lavender)
 - Psalm 68:5 - "Father of the fatherless, judge of the widows"
 - Proverbs 10:7 - "The memory of the just is blessed"
+- Matthew 25:40 - "Inasmuch as ye have done it unto the least of these"
 
 ---
 

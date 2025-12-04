@@ -23,6 +23,17 @@ A self-contained Scripture study system designed to survive and serve when infra
 
 ---
 
+## New Here?
+
+| Document | Purpose |
+|----------|---------|
+| **[START_HERE.txt](START_HERE.txt)** | First contact - what this is |
+| **[WHY.txt](WHY.txt)** | The Gospel and why this exists |
+| **[THE_JOURNEY.md](THE_JOURNEY.md)** | How it was built from scratch (so you can too) |
+| **[FOR_ANNA.md](FOR_ANNA.md)** | Scripture guide for conversations with non-believers |
+
+---
+
 ## Quick Start
 
 ### Option A: Download ZIP (no coding required)

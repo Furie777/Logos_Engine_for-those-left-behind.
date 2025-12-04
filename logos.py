@@ -34,6 +34,45 @@ Usage:
     python logos.py verify              # Verify all data checksums
     python logos.py integrity           # Interactive integrity checker
     python logos.py diagnose <file>     # Diagnose specific file
+
+    VISUALIZATION (Graphviz):
+    python logos.py graph <ref>         # Generate visual network map
+    python logos.py graph <ref> <depth> # Deeper traversal (default: 1)
+    python logos.py banner <text>       # ASCII art banner
+
+    IMAGE GENERATION (ImageMagick):
+    python logos.py image <ref>         # Create shareable verse image
+    python logos.py image <ref> <theme> # Themes: light, dark, parchment, royal
+
+    FUZZY SEARCH (fzf):
+    python logos.py fzf                 # Interactive verse picker
+    python logos.py fzf <keyword>       # Pre-filter by keyword
+    python logos.py pick                # Pick and display verse
+
+    NETWORK TRAVERSAL:
+    python logos.py chain <start> <end> # Shortest path between verses
+    python logos.py bridge <ref1> <ref2> # Find common connections
+    python logos.py genesis-revelation   # The great chain (Gen 3:15 → Rev 22:21)
+
+    VOICE (Text-to-Speech):
+    python logos.py speak <ref>         # Speak a verse aloud
+    python logos.py speak <ref> slow    # Slower speech
+    python logos.py audio <ref>         # Save verse as audio file
+
+    QR CODES:
+    python logos.py qr <ref>            # QR code with verse text
+    python logos.py qr <ref> link       # QR code with Bible link
+    python logos.py qrterm <ref>        # ASCII QR in terminal
+
+    DOCUMENTS:
+    python logos.py doc <ref>           # Create verse document (.docx)
+    python logos.py doc "Psalm 23"      # Full chapter document
+    python logos.py topic <word>        # Topic collection document
+
+    DAILY VERSE:
+    python logos.py daily               # Today's verse (deterministic)
+    python logos.py daily 2025-12-25    # Verse for specific date
+    python logos.py week                # This week's verses
 """
 
 import sys
@@ -284,6 +323,133 @@ def main():
         filepath = sys.argv[2]
         from src.integrity import diagnose
         diagnose(filepath)
+
+    elif command == 'graph':
+        if len(sys.argv) < 3:
+            from src.visualize import graph_repl
+            graph_repl()
+        else:
+            ref = sys.argv[2]
+            # Check if depth provided
+            depth = 1
+            if len(sys.argv) > 3:
+                try:
+                    depth = int(sys.argv[3])
+                except ValueError:
+                    # Not a number, might be part of reference
+                    ref = ' '.join(sys.argv[2:])
+            from src.visualize import generate_graph
+            generate_graph(ref, depth=depth)
+
+    elif command == 'banner':
+        if len(sys.argv) < 3:
+            text = "LOGOS"
+        else:
+            text = ' '.join(sys.argv[2:])
+        from src.visualize import show_banner
+        show_banner(text)
+
+    elif command == 'image':
+        if len(sys.argv) < 3:
+            print("Usage: python logos.py image <reference> [theme]")
+            print("Themes: light, dark, parchment, royal")
+            return
+        ref = sys.argv[2]
+        theme = sys.argv[3] if len(sys.argv) > 3 else 'parchment'
+        from src.image import generate_verse_image
+        generate_verse_image(ref, theme)
+
+    elif command == 'fzf':
+        prefilter = ' '.join(sys.argv[2:]) if len(sys.argv) > 2 else None
+        from src.fuzzy import pick_verse
+        pick_verse(prefilter)
+
+    elif command == 'pick':
+        prefilter = ' '.join(sys.argv[2:]) if len(sys.argv) > 2 else None
+        from src.fuzzy import pick_verse
+        pick_verse(prefilter)
+
+    elif command == 'chain':
+        if len(sys.argv) < 4:
+            print("Usage: python logos.py chain <start_ref> <end_ref>")
+            print("Example: python logos.py chain 'Genesis 1:1' 'John 1:1'")
+            return
+        start = sys.argv[2]
+        end = sys.argv[3]
+        from src.chain import find_chain
+        find_chain(start, end)
+
+    elif command == 'bridge':
+        if len(sys.argv) < 4:
+            print("Usage: python logos.py bridge <ref1> <ref2>")
+            return
+        ref1 = sys.argv[2]
+        ref2 = sys.argv[3]
+        from src.chain import find_bridge
+        find_bridge(ref1, ref2)
+
+    elif command == 'genesis-revelation':
+        from src.chain import protoevangelium_to_consummation
+        protoevangelium_to_consummation()
+
+    elif command == 'speak':
+        if len(sys.argv) < 3:
+            print("Usage: python logos.py speak <reference> [slow|normal|fast]")
+            return
+        ref = sys.argv[2]
+        speed = sys.argv[3] if len(sys.argv) > 3 else 'normal'
+        from src.voice import speak_verse
+        speak_verse(ref, speed)
+
+    elif command == 'audio':
+        if len(sys.argv) < 3:
+            print("Usage: python logos.py audio <reference>")
+            return
+        ref = sys.argv[2]
+        from src.voice import save_audio
+        save_audio(ref)
+
+    elif command == 'qr':
+        if len(sys.argv) < 3:
+            print("Usage: python logos.py qr <reference> [text|link|ref]")
+            return
+        ref = sys.argv[2]
+        mode = sys.argv[3] if len(sys.argv) > 3 else 'text'
+        from src.qr import generate_qr
+        generate_qr(ref, mode)
+
+    elif command == 'qrterm':
+        if len(sys.argv) < 3:
+            print("Usage: python logos.py qrterm <reference>")
+            return
+        ref = sys.argv[2]
+        from src.qr import terminal_qr
+        terminal_qr(ref)
+
+    elif command == 'doc':
+        if len(sys.argv) < 3:
+            print("Usage: python logos.py doc <reference or chapter>")
+            return
+        ref = ' '.join(sys.argv[2:])
+        from src.pdf import save_verse_pdf
+        save_verse_pdf(ref)
+
+    elif command == 'topic':
+        if len(sys.argv) < 3:
+            print("Usage: python logos.py topic <keyword>")
+            return
+        topic = ' '.join(sys.argv[2:])
+        from src.pdf import save_topic_collection
+        save_topic_collection(topic)
+
+    elif command == 'daily':
+        date_str = sys.argv[2] if len(sys.argv) > 2 else None
+        from src.daily import show_daily_verse
+        show_daily_verse(date_str)
+
+    elif command == 'week':
+        from src.daily import show_weekly
+        show_weekly()
 
     elif command == 'help':
         print(__doc__)

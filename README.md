@@ -96,10 +96,38 @@ python logos.py concordance   # Hebrew/Greek explorer
 python logos.py semantic      # Meaning-based search
 ```
 
+### Visualization (requires: graphviz)
+```bash
+python logos.py graph "John 3:16"       # Visual network map (PNG)
+python logos.py graph "Romans 8:28" 2   # Depth 2 traversal
+python logos.py banner "LOGOS"          # ASCII art banner
+```
+
+### Image Generation (requires: imagemagick)
+```bash
+python logos.py image "John 3:16"           # Shareable verse image
+python logos.py image "Romans 8:28" dark    # Dark theme
+python logos.py image "Psalm 23:1" royal    # Royal gold theme
+```
+
+### Network Traversal
+```bash
+python logos.py chain "Genesis 3:15" "Revelation 22:21"  # Shortest path
+python logos.py bridge "John 3:16" "Romans 5:8"          # Common connections
+python logos.py genesis-revelation                        # The great chain
+```
+
+### Fuzzy Search (requires: fzf)
+```bash
+python logos.py fzf              # Interactive verse picker
+python logos.py fzf grace        # Pre-filter by keyword
+```
+
 ### System
 ```bash
 python logos.py stats    # Show network statistics
 python logos.py build    # Rebuild graph from data
+python logos.py verify   # Verify data integrity
 python logos.py help     # Show all commands
 ```
 
@@ -120,7 +148,16 @@ LOGOS_ENGINE/
 │   ├── query.py                # Search functions
 │   ├── concordance.py          # Hebrew/Greek tools
 │   ├── semantic.py             # Meaning-based search
+│   ├── visualize.py            # Graphviz network maps
+│   ├── image.py                # ImageMagick verse images
+│   ├── chain.py                # Network traversal
+│   ├── fuzzy.py                # fzf integration
+│   ├── integrity.py            # Data verification
 │   └── api.py                  # Bible API (optional)
+│
+├── neural/
+│   ├── baby_brain.py           # Neural network demo
+│   └── sentinel_brain.py       # SENTINEL architecture demo
 │
 ├── data/
 │   ├── kjv.json                # 36,586 verses
@@ -136,7 +173,9 @@ LOGOS_ENGINE/
 │   └── FARADAY_ROOM_GUIDE.md   # EMP protection
 │
 └── output/
-    └── logos_graph.gpickle     # Prebuilt network graph
+    ├── logos_graph.gpickle     # Prebuilt network graph
+    ├── *.dot                   # Graphviz source files
+    └── *.png                   # Generated images
 ```
 
 ---
@@ -159,10 +198,18 @@ When you study John 3:16, you discover:
 
 ## Requirements
 
+**Core (required):**
 - Python 3.x
 - NetworkX (`pip install networkx`)
 - 200MB storage
-- Works on: Windows, Mac, Linux, Raspberry Pi, Android (Termux)
+
+**Optional (for enhanced features):**
+- graphviz - Network visualization (`apt install graphviz`)
+- imagemagick - Verse images (`apt install imagemagick`)
+- figlet - ASCII banners (`apt install figlet`)
+- fzf - Fuzzy search (`apt install fzf`)
+
+**Works on:** Windows, Mac, Linux, Raspberry Pi, Android (Termux)
 
 ---
 

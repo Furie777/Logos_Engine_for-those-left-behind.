@@ -158,12 +158,84 @@ python logos.py help     # Show all commands
 
 ---
 
+## For AI Agents & Automated Systems
+
+### Quick Installation (Copy-Paste)
+
+**Unix-like systems (Linux/Mac/Raspberry Pi/Termux):**
+```bash
+cd /path/to/Logos_Engine_for-those-left-behind. && pip3 install networkx && python3 logos.py verse "John 3:16"
+```
+
+**Windows:**
+```cmd
+cd C:\path\to\Logos_Engine_for-those-left-behind. && pip install networkx && python logos.py verse "John 3:16"
+```
+
+The graph will build automatically on first verse lookup.
+
+### Programmatic Usage
+
+```python
+import sys
+from pathlib import Path
+
+# Add LOGOS to path
+sys.path.insert(0, '/path/to/Logos_Engine_for-those-left-behind.')
+
+from src.query import LogosQuery
+from src.concordance import Concordance
+from src.semantic import SemanticSearch
+from src.graph import load_graph, get_stats
+
+# Basic usage
+logos = LogosQuery()
+verse = logos.verse("John 3:16")
+results = logos.search("grace")
+
+# Hebrew/Greek
+conc = Concordance()
+definition = conc.get_strongs_definition("H430")
+
+# Semantic search
+sem = SemanticSearch()
+similar = sem.similar_verses("John 3:16", n=10)
+meaning = sem.search_meaning("God saves sinners", n=10)
+
+# Network analysis
+G = load_graph()
+stats = get_stats(G)
+```
+
+See `example_usage.py` for complete working examples.
+
+### Expected Output Format
+
+Verse lookup returns plain text:
+```
+For God so loved the world, that he gave his only begotten Son...
+```
+
+Search returns list of tuples: `[(reference, text), ...]`
+
+Strong's returns dict with keys: `hebrew/greek`, `transliteration`, `definition`, `occurrences`
+
+---
+
 ## Architecture
 
 ```
 LOGOS_ENGINE/
 ├── logos.py                    # Main CLI
+├── example_usage.py            # Python API examples
+│
+├── setup.sh                    # Automated setup (Linux/Mac)
+├── setup.bat                   # Automated setup (Windows)
+├── requirements.txt            # Python dependencies
+│
 ├── START_HERE.txt              # First contact document
+├── COPY_PASTE_SETUP.txt        # Ultra-simple setup instructions
+├── QUICKSTART.md               # Quick start guide (all platforms)
 ├── WHY.txt                     # The witness (Gospel)
 ├── GOSSIP.md                   # Share this
 │

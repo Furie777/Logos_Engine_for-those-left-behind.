@@ -20,26 +20,34 @@ No payment required.
                                    HOW TO BEGIN
 --------------------------------------------------------------------------------
 
-IF YOU DOWNLOADED THIS FROM GITHUB:
-  - You already have everything. Just follow docs/INSTALL.md
+QUICKEST WAY - AUTOMATED SETUP:
+  Windows: Double-click "setup.bat"
+  Linux/Mac: Open terminal, run "bash setup.sh"
+  
+  DONE! That's it. The script does everything for you.
 
-IF YOU'RE LOOKING AT THIS ON GITHUB:
-  - Click the green "Code" button
-  - Click "Download ZIP"
-  - Extract the ZIP file
-  - Then follow docs/INSTALL.md
+SIMPLE WAY - COPY & PASTE:
+  Read "COPY_PASTE_SETUP.txt" for simple copy-paste commands
+  
+  Example (Linux/Mac):
+    pip3 install networkx && python3 logos.py verse "John 3:16"
+  
+  Example (Windows):
+    pip install networkx && python logos.py verse "John 3:16"
+
+DETAILED WAY:
+  Read "docs/INSTALL.md" for complete platform-specific instructions
+  Read "QUICKSTART.md" for all options and troubleshooting
 
 THEN:
 
 1. Read WHY.txt to understand why this exists
 
-2. Read docs/INSTALL.md for setup instructions
+2. Once installed, run:
 
-3. Once installed, run:
+   python logos.py help        (or: python3 logos.py help)
 
-   python logos.py help
-
-4. Try these commands:
+3. Try these commands:
 
    python logos.py verse "John 3:16"
    python logos.py search "grace"

@@ -36,24 +36,49 @@ A self-contained Scripture study system designed to survive and serve when infra
 
 ## Quick Start
 
-### Option A: Download ZIP (no coding required)
+### ⚡ Fastest Way (Copy & Paste)
+
+**See [QUICKSTART.md](QUICKSTART.md) for complete copy-paste commands.**
+
+**Windows (double-click):** `setup.bat`
+
+**Linux/Mac/Raspberry Pi (one command):**
+```bash
+bash setup.sh
+```
+
+**Or manually (3 commands):**
+```bash
+# Linux/Mac
+pip3 install networkx
+python3 logos.py build
+python3 logos.py verse "John 3:16"
+
+# Windows
+pip install networkx
+python logos.py build
+python logos.py verse "John 3:16"
+```
+
+### Option A: Download ZIP (Recommended for Non-Technical Users)
 
 1. Click the green **"Code"** button above
 2. Click **"Download ZIP"**
 3. Extract the ZIP to a folder
-4. Follow `docs/INSTALL.md` for your platform
+4. **Windows:** Double-click `setup.bat`
+5. **Linux/Mac:** Open terminal, run `bash setup.sh`
 
-### Option B: Git Clone
+### Option B: Git Clone (For Developers)
 
 ```bash
 git clone https://github.com/Furie777/Logos_Engine_for-those-left-behind..git
 cd Logos_Engine_for-those-left-behind.
 
-# Install dependency
-pip install networkx
-
-# Test
-python logos.py verse "John 3:16"
+# Automated setup
+bash setup.sh  # Linux/Mac
+# OR manually:
+pip3 install -r requirements.txt
+python3 logos.py verse "John 3:16"
 ```
 
 ---

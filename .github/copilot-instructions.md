@@ -49,18 +49,24 @@ Logos_Engine_for-those-left-behind./
 │   ├── baby_brain.py           # Simple neural demo
 │   └── sentinel_brain.py       # SENTINEL architecture
 ├── data/                       # Scripture data
-│   ├── kjv.json                # KJV verses
+│   ├── kjv.json                # KJV verses (main)
 │   ├── strongs.json            # Strong's definitions
+│   ├── strongs_complete.json   # Complete Strong's data
 │   ├── cross_refs.json         # Cross-references
 │   ├── HebrewStrong.xml        # Hebrew source data
-│   └── strongsgreek.xml        # Greek source data
+│   ├── strongsgreek.xml        # Greek source data
+│   ├── apocrypha_*.json        # 1611 Apocrypha books
+│   ├── apocrypha_structure.json # Apocrypha metadata
+│   └── cache/                  # Cached data
 ├── docs/                       # Documentation
 │   ├── INSTALL.md              # Installation guide
 │   ├── RECOVERY.md             # Disaster recovery
 │   ├── HARDWARE_KIT.md         # Physical hardware
 │   └── FARADAY_ROOM_GUIDE.md   # EMP protection
-└── output/                     # Generated files
-    └── logos_graph.gpickle     # Pre-built graph
+└── output/                     # Generated files (created at runtime)
+    ├── logos_graph.gpickle     # Pre-built graph
+    ├── *.dot                   # Graphviz source files
+    └── *.png                   # Generated images
 ```
 
 ## Core Commands
@@ -158,9 +164,12 @@ except ImportError:
 ### Files You SHOULD NOT Edit
 - `data/kjv.json` - Source Bible text (generated)
 - `data/strongs.json` - Strong's definitions (generated)
+- `data/strongs_complete.json` - Complete Strong's data (generated)
 - `data/cross_refs.json` - Cross-references (generated)
+- `data/apocrypha_*.json` - Apocrypha text (generated from API)
 - `data/*.xml` - Source XML files (external)
-- `output/*.gpickle` - Generated graph files
+- `data/cache/` - Cached data
+- `output/` - All generated output files
 - `.git*` - Git configuration
 - `__pycache__/` - Python cache
 

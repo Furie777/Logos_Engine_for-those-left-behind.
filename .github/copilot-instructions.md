@@ -66,7 +66,9 @@ Logos_Engine_for-those-left-behind./
 └── output/                     # Generated files (created at runtime)
     ├── logos_graph.gpickle     # Pre-built graph
     ├── *.dot                   # Graphviz source files
-    └── *.png                   # Generated images
+    ├── *.png                   # Generated images
+    ├── *.pdf                   # Generated PDF documents
+    └── *.qr                    # QR code files
 ```
 
 ## Core Commands

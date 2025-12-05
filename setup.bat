@@ -67,7 +67,23 @@ echo.
 REM Step 4: Build the graph
 echo Step 4: Building LOGOS graph database...
 echo This will create the network graph from Bible data...
-%PYTHON_CMD% logos.py build
+if exist "output\logos_graph.gpickle" (
+    echo [INFO] Graph already exists, skipping build
+) else (
+    %PYTHON_CMD% logos.py build
+    if %errorlevel% neq 0 (
+        REM Check if graph was created despite error
+        if exist "output\logos_graph.gpickle" (
+            echo [WARNING] Build returned error, but graph exists
+        ) else (
+            echo [ERROR] Graph build failed
+            pause
+            exit /b 1
+        )
+    ) else (
+        echo [OK] Graph built successfully
+    )
+)
 echo.
 
 REM Step 5: Test the installation

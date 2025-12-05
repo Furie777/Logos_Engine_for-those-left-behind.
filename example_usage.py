@@ -157,10 +157,24 @@ def main():
         print("\n Use these patterns in your own code to integrate LOGOS ENGINE.")
         print(" See src/ directory for more functionality.\n")
         
+    except ImportError as e:
+        print(f"\n ERROR: Missing required module - {e}")
+        print("\n Make sure networkx is installed: 'pip3 install networkx'")
+        print(" and that you're running from the LOGOS ENGINE directory.\n")
+        sys.exit(1)
+        
+    except FileNotFoundError as e:
+        print(f"\n ERROR: Required file not found - {e}")
+        print("\n Make sure you've run 'python3 logos.py build' first")
+        print(" to create the graph database.\n")
+        sys.exit(1)
+        
     except Exception as e:
         print(f"\n ERROR: {e}")
-        print("\n Make sure you've run 'python3 logos.py build' first")
-        print(" and that networkx is installed: 'pip3 install networkx'\n")
+        print("\n This might happen if:")
+        print(" 1. You haven't run 'python3 logos.py build' yet")
+        print(" 2. networkx is not installed: 'pip3 install networkx'")
+        print(" 3. You're not in the LOGOS ENGINE directory\n")
         sys.exit(1)
 
 

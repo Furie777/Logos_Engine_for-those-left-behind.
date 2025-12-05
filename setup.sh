@@ -83,23 +83,36 @@ echo ""
 # Step 3: Install networkx
 echo "Step 3: Installing required dependencies..."
 echo "Installing networkx (this may take a moment)..."
-$PIP_CMD install --user networkx || {
-    echo -e "${YELLOW}⚠ Failed with --user flag, trying without...${NC}"
-    $PIP_CMD install networkx || {
-        echo -e "${RED}✗ Failed to install networkx${NC}"
-        echo "Please try manually: $PIP_CMD install networkx"
-        exit 1
-    }
-}
-echo -e "${GREEN}✓ networkx installed successfully${NC}"
+if $PIP_CMD install --user networkx 2>/dev/null; then
+    echo -e "${GREEN}✓ networkx installed successfully${NC}"
+elif $PIP_CMD install networkx 2>/dev/null; then
+    echo -e "${GREEN}✓ networkx installed successfully${NC}"
+else
+    echo -e "${RED}✗ Failed to install networkx${NC}"
+    echo "Please try manually: $PIP_CMD install networkx"
+    exit 1
+fi
 echo ""
 
 # Step 4: Build the graph
 echo "Step 4: Building LOGOS graph database..."
 echo "This will create the network graph from Bible data..."
-$PYTHON_CMD logos.py build || {
-    echo -e "${YELLOW}⚠ Graph build returned non-zero, but this may be okay if graph already exists${NC}"
-}
+GRAPH_FILE="output/logos_graph.gpickle"
+if [ -f "$GRAPH_FILE" ]; then
+    echo -e "${YELLOW}⚠ Graph already exists, skipping build${NC}"
+else
+    if $PYTHON_CMD logos.py build; then
+        echo -e "${GREEN}✓ Graph built successfully${NC}"
+    else
+        # Check if graph was actually created despite non-zero exit
+        if [ -f "$GRAPH_FILE" ]; then
+            echo -e "${YELLOW}⚠ Build returned non-zero, but graph exists${NC}"
+        else
+            echo -e "${RED}✗ Graph build failed${NC}"
+            exit 1
+        fi
+    fi
+fi
 echo ""
 
 # Step 5: Test the installation

@@ -21,19 +21,29 @@ No payment required.
 --------------------------------------------------------------------------------
 
 IF YOU DOWNLOADED THIS FROM GITHUB:
-  - You already have everything. Just follow docs/INSTALL.md
+  - You already have everything. 
+  - New to computers? → Read GETTING_STARTED.md (step-by-step guide)
+  - Tech-savvy? → Read docs/INSTALL.md
 
 IF YOU'RE LOOKING AT THIS ON GITHUB:
   - Click the green "Code" button
   - Click "Download ZIP"
   - Extract the ZIP file
-  - Then follow docs/INSTALL.md
+  - Then read GETTING_STARTED.md or docs/INSTALL.md
+
+NAVIGATION:
+  - INDEX.md → Complete guide to everything in this repository
+  - GETTING_STARTED.md → Simple setup for beginners (10-20 minutes)
+  - TROUBLESHOOTING.md → Common problems and solutions
+  - WHY.txt → Understand the Gospel and why this exists
 
 THEN:
 
 1. Read WHY.txt to understand why this exists
 
-2. Read docs/INSTALL.md for setup instructions
+2. Follow the setup guide:
+   - Beginners: GETTING_STARTED.md
+   - Experienced: docs/INSTALL.md
 
 3. Once installed, run:
 

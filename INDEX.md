@@ -47,6 +47,8 @@ This repository contains:
 |----------|---------|
 | [GETTING_STARTED.md](GETTING_STARTED.md) | Simplified quick start guide (no tech experience needed) |
 | [TROUBLESHOOTING.md](TROUBLESHOOTING.md) | Common problems and solutions |
+| [QUICK_REFERENCE.md](QUICK_REFERENCE.md) | Quick reference card (print this!) |
+| [FILE_STRUCTURE.md](FILE_STRUCTURE.md) | Visual guide to where everything is located |
 | [FOR_ANNA.md](FOR_ANNA.md) | Scripture guide for conversations with non-believers |
 | [GOSSIP.md](GOSSIP.md) | How to share this with others |
 

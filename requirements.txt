@@ -1,0 +1,14 @@
+# LOGOS Engine Dependencies
+# =========================
+
+# Core Dependencies
+networkx>=3.0
+
+# Testing Dependencies
+pytest>=7.0
+pytest-cov>=4.0
+pytest-mock>=3.10
+
+# Optional Dependencies (for full functionality)
+# graphviz  # Network visualization
+# pillow    # Image generation

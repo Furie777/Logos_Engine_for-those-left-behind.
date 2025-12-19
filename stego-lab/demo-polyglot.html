@@ -1,0 +1,23 @@
+<!--﻿​‌​‌​‌​​‍​‌​​‌​​​‍​‌​​​‌​‌‍​‌​‌‌‌‌‌‍​‌​‌​‌​​‍​‌​‌​​‌​‍​‌​‌​‌​‌‍​‌​‌​‌​​‍​‌​​‌​​​‍​‌​‌‌‌‌‌‍​‌​​‌​​‌‍​‌​‌​​‌‌‍​‌​‌‌‌‌‌‍​‌​​‌​​​‍​‌​​‌​​‌‍​‌​​​‌​​‍​‌​​​‌​​‍​‌​​​‌​‌‍​‌​​‌‌‌​‍﻿
+/* HTML sees this as a comment, JS sees it as a block comment starting here */
+//--><!DOCTYPE html>
+<html>
+<head><title>Normal Page</title></head>
+<body>
+<h1>Normal Page</h1>
+<script>
+/* This runs in browser */
+document.body.innerHTML += '<p style="color:green">JavaScript executed in browser!</p>';
+</script>
+<!--
+//-->
+<script>/* Hide JS from browser with type *///</script>
+<!--
+console.log('Secret extracted!');
+//-->
+</body>
+</html>
+<!--
+/* Node.js execution starts here */
+console.log('Secret extracted!');
+//-->

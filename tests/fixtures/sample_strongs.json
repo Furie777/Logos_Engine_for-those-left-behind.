@@ -1,0 +1,68 @@
+{
+  "H430": {
+    "hebrew": "אֱלֹהִים",
+    "transliteration": "elohim",
+    "definition": "God, gods, mighty ones",
+    "occurrences": 2606
+  },
+  "H3068": {
+    "hebrew": "יְהוָה",
+    "transliteration": "YHWH/Yahweh",
+    "definition": "The LORD, the self-existent One",
+    "occurrences": 6519
+  },
+  "H7307": {
+    "hebrew": "רוּחַ",
+    "transliteration": "ruach",
+    "definition": "spirit, wind, breath",
+    "occurrences": 378
+  },
+  "H1697": {
+    "hebrew": "דָּבָר",
+    "transliteration": "dabar",
+    "definition": "word, speech, matter, thing",
+    "occurrences": 1441
+  },
+  "H2617": {
+    "hebrew": "חֶסֶד",
+    "transliteration": "chesed",
+    "definition": "lovingkindness, mercy, steadfast love",
+    "occurrences": 248
+  },
+  "G2316": {
+    "greek": "θεός",
+    "transliteration": "theos",
+    "definition": "God",
+    "occurrences": 1343
+  },
+  "G3056": {
+    "greek": "λόγος",
+    "transliteration": "logos",
+    "definition": "word, reason, the Word (Christ)",
+    "occurrences": 330
+  },
+  "G26": {
+    "greek": "ἀγάπη",
+    "transliteration": "agape",
+    "definition": "love (divine, unconditional)",
+    "occurrences": 116
+  },
+  "G4102": {
+    "greek": "πίστις",
+    "transliteration": "pistis",
+    "definition": "faith, belief, trust",
+    "occurrences": 244
+  },
+  "G5485": {
+    "greek": "χάρις",
+    "transliteration": "charis",
+    "definition": "grace, favor, kindness",
+    "occurrences": 156
+  },
+  "G4991": {
+    "greek": "σωτηρία",
+    "transliteration": "soteria",
+    "definition": "salvation, deliverance",
+    "occurrences": 46
+  }
+}

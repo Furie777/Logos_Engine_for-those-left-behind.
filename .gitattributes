@@ -1,0 +1,14 @@
+# Ensure shell scripts are executable on Unix systems
+*.sh text eol=lf
+setup.sh text eol=lf
+
+# Ensure batch files use Windows line endings
+*.bat text eol=crlf
+setup.bat text eol=crlf
+
+# Python files use LF
+*.py text eol=lf
+
+# Markdown and text files
+*.md text eol=lf
+*.txt text eol=lf

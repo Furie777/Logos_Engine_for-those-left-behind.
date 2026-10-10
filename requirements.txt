@@ -1,0 +1,27 @@
+# LOGOS ENGINE - Required Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core requirement - network graph library
+networkx>=3.0
+
+# Optional dependencies for enhanced features
+# Uncomment these lines if you want to use these features:
+
+# For graph visualization (logos.py graph)
+# graphviz
+
+# For fuzzy search (logos.py fzf)
+# Note: Also requires 'fzf' command-line tool to be installed separately
+
+# For QR code generation (logos.py qr)
+# qrcode[pil]
+
+# For document generation (logos.py doc)
+# python-docx
+# reportlab
+
+# For text-to-speech (logos.py speak)
+# pyttsx3
+
+# Note: ImageMagick and Graphviz are system-level dependencies
+# that cannot be installed via pip. See docs/INSTALL.md for details.

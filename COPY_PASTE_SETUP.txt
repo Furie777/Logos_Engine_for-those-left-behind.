@@ -1,0 +1,136 @@
+================================================================================
+                    LOGOS ENGINE - COPY & PASTE SETUP
+================================================================================
+
+SIMPLE 3-STEP SETUP - Just copy and paste these commands:
+
+================================================================================
+WINDOWS USERS
+================================================================================
+
+Step 1: Open Command Prompt (Press Windows Key + R, type "cmd", press Enter)
+
+Step 2: Navigate to where you extracted LOGOS ENGINE
+        (Example: if it's in Downloads folder)
+
+cd Downloads\Logos_Engine_for-those-left-behind.
+
+Step 3: Run this command:
+
+pip install networkx && python logos.py verse "John 3:16"
+
+DONE! If you see the verse text, it's working.
+
+================================================================================
+LINUX / MAC / RASPBERRY PI USERS
+================================================================================
+
+Step 1: Open Terminal
+
+Step 2: Navigate to where you extracted LOGOS ENGINE
+        (Example: if it's in Downloads folder)
+
+cd ~/Downloads/Logos_Engine_for-those-left-behind.
+
+Step 3: Run this command:
+
+pip3 install networkx && python3 logos.py verse "John 3:16"
+
+DONE! If you see the verse text, it's working.
+
+================================================================================
+ANDROID (TERMUX) USERS
+================================================================================
+
+Step 1: Open Termux app
+
+Step 2: Install Python (if not already installed):
+
+pkg install python
+
+Step 3: Navigate to where LOGOS ENGINE is located:
+
+cd ~/storage/downloads/Logos_Engine_for-those-left-behind.
+
+Step 4: Run this command:
+
+pip install networkx && python logos.py verse "John 3:16"
+
+DONE! If you see the verse text, it's working.
+
+================================================================================
+AI / AUTOMATED SYSTEMS
+================================================================================
+
+Installation (Unix-like):
+cd /path/to/Logos_Engine_for-those-left-behind. && pip3 install networkx && python3 logos.py verse "John 3:16"
+
+Installation (Windows):
+cd C:\path\to\Logos_Engine_for-those-left-behind. && pip install networkx && python logos.py verse "John 3:16"
+
+Expected output:
+For God so loved the world, that he gave his only begotten Son, that whosoever
+believeth in him should not perish, but have everlasting life.
+
+API usage from Python:
+import sys
+sys.path.insert(0, '/path/to/Logos_Engine_for-those-left-behind.')
+from src.query import LogosQuery
+logos = LogosQuery()
+print(logos.verse("John 3:16"))
+
+================================================================================
+EVEN SIMPLER? USE THE AUTOMATED SCRIPTS
+================================================================================
+
+Windows: Just double-click "setup.bat"
+Linux/Mac: Open terminal and run: bash setup.sh
+
+================================================================================
+WHAT IF IT DOESN'T WORK?
+================================================================================
+
+Error: "python not found"
+Fix: Try "python3" instead of "python"
+
+Error: "pip not found"  
+Fix Windows: Reinstall Python from python.org (check "Add to PATH")
+Fix Linux: sudo apt install python3-pip
+Fix Mac: Install homebrew, then: brew install python3
+
+Error: "networkx not found"
+Fix: pip install networkx  (or: pip3 install networkx)
+
+Still stuck? Read QUICKSTART.md or docs/INSTALL.md
+
+================================================================================
+FIRST COMMANDS TO TRY
+================================================================================
+
+Show help:
+python logos.py help        (or: python3 logos.py help)
+
+Look up verses:
+python logos.py verse "Genesis 1:1"
+python logos.py verse "John 3:16"
+python logos.py verse "Revelation 22:21"
+
+Search for words:
+python logos.py search "grace"
+python logos.py search "faith"
+
+Study Hebrew/Greek:
+python logos.py strongs H430    (Hebrew for "God")
+python logos.py strongs G26     (Greek for "love")
+
+Network stats:
+python logos.py stats
+
+================================================================================
+
+"Write the vision, and make it plain upon tables, that he may run that
+readeth it." - Habakkuk 2:2
+
+Built Thanksgiving 2025 | For those left behind
+
+================================================================================
